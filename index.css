@@ -1,0 +1,50 @@
+* {
+  background-color: white;
+  color: black;
+  padding: 0em 0.5em;
+  margin: 0.2em;
+  overflow: clip;
+}
+:root {
+  --font-max: 5rem;
+}
+h1 {
+  font-size: var(--font-max);
+}
+h2 {
+  font-size: calc(var(--font-max) / 1.618);
+}
+h3 {
+  font-weight: 800;
+  font-size: calc(var(--font-max) / (1.618 * 2));
+}
+.skills,
+.walmart,
+.timHortens,
+.pestos,
+.projects,
+.education,
+main,
+header,
+footer {
+  border: 0.4em solid black;
+  border-radius: 1em;
+}
+.experience {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projects li {
+  list-style: none;
+}
+article,
+li,
+p,
+aside,
+footer {
+  font-size: calc(var(--font-max) / (1.618 * 2));
+}
+header {
+  text-align: center;
+}
