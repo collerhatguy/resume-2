@@ -48,3 +48,8 @@ footer {
 header {
   text-align: center;
 }
+img {
+  width: 50vw;
+  height: 90vh;
+  margin-left: 25vw;
+}
