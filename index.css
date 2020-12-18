@@ -6,7 +6,7 @@
   overflow: clip;
 }
 :root {
-  --font-max: 5rem;
+  --font-max: 4.5rem;
 }
 h1 {
   font-size: var(--font-max);
