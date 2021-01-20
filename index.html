@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="This is a resume for Jacob Shomali: Current ametuer, future Web Developer"> 
-  <link href="index.css" rel="stylesheet" />
+  <link href="styling/style.css" rel="stylesheet" />
+  <script src="main.js" defer></script>
 <title>Jacob Shomali: Resume</title>
 </head>
   <body>
@@ -17,28 +18,58 @@
       <div class="bio">
       <h2>Executive Summary:</h2>
         <article>
-            You will be happy to know am analytical thinker who is capable of breaking down complex
-            systems and understanding them thoroughly. It is also true that I am very ambitious and will work hard for you even when unnecessary. I can build rapport with people fairly well and interact
-            positively with customers. I have a practical understanding of
-            React, Javascript, HTML, and CSS.
+        I have a deep understanding of:
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>SASS</li>
+          <li>React</li>
+        </ul>
+        I am also learning new technologies like:
+        <ul>
+          <li>SQL</li>
+          <li>Node.js</li>
+          <li>EXPRESS</li>
+        </ul>
+        When it comes to HTML you can expect me to be able to put together 
+        a template that is functional, understandable, and that uses semantic 
+        HTML elements properly for Search Engine Optimization (SEO). 
+        My knowledge of Javascript is advanced, including higher-order methods, 
+        async and await, modular coding, destructuring, and API integration. 
         </article>
       </div>
       <div class="projects">
         <h2>My projects:</h2>
-        <ul>
-          <li><b>Hearthstone cards</b>: <a target="_blank" href="https://collerhatguy.github.io/hearthstoneCards/">Live Server</a><a target="_blank" href="https://github.com/collerhatguy/hearthstoneCards"> Repository</a></li>
-          <aside>This displays a list of all Hearthstone cards and there relative expansions</aside>
-          <li><b>Coal Miner</b>:<a target="_blank" href="https://github.com/collerhatguy/coal-miner-fixed"> Repository</a></li>
-          <aside>This is a clicker game I built with React</aside>
-          <li><b>Musician website</b>: <a target="_blank" href="https://collerhatguy.github.io/JosephVoelker/">Live Server</a><a target="_blank" href="https://github.com/collerhatguy/JosephVoelker"> Repository</a></li>
-          <aside>This is a landing page for a musician friend of mine</aside>
-          <li><b>Shape Maker</b>: <a target="_blank" href="https://collerhatguy.github.io/shapeMaker/">Live Server</a><a target="_blank" href="https://github.com/collerhatguy/shapeMaker"> Repository</a></li>
-          <aside>A website where you can build custom shapes</aside>
-          <li><b>Emotional Crusher</b>: <a target="_blank" href="https://collerhatguy.github.io/emotional-furnace/">Live Server</a><a target="_blank" href="https://github.com/collerhatguy/emotional-furnace"> Repository</a></li>
-          <aside>This is a web app for emotional catharsis</aside>
-          <li><b>Christmas Tree</b>: <a target="_blank" href="https://collerhatguy.github.io/christmasTree/">Live Server</a><a target="_blank" href="https://github.com/collerhatguy/christmasTree"> Repository</a></li>
-          <aside>This is a Christmas card I send to my friends and family</aside>
+        <ul id="projectList">
+          <div class="project">
+            <li><b>Hearthstone cards</b>: <a target="_blank" href="https://collerhatguy.github.io/hearthstoneCards/">Live Server</a><a target="_blank" href="https://github.com/collerhatguy/hearthstoneCards"> Repository</a></li>
+            <aside>This displays a list of all Hearthstone cards and there relative expansions</aside>
+          </div>
+          <div class="project">
+            <li><b>Coal Miner</b>:<a target="_blank" href="https://github.com/collerhatguy/coal-miner-fixed"> Repository</a></li>
+            <aside>This is a clicker game I built with React</aside>
+          </div>
+          <div class="project">
+            <li><b>Musician website</b>: <a target="_blank" href="https://collerhatguy.github.io/JosephVoelker/">Live Server</a><a target="_blank" href="https://github.com/collerhatguy/JosephVoelker"> Repository</a></li>
+            <aside>This is a landing page for a musician friend of mine</aside>
+          </div>
+          <div class="project">
+            <li><b>Shape Maker</b>: <a target="_blank" href="https://collerhatguy.github.io/shapeMaker/">Live Server</a><a target="_blank" href="https://github.com/collerhatguy/shapeMaker"> Repository</a></li>
+            <aside>A website where you can build custom shapes</aside>
+          </div>
+          <div class="project">
+            <li><b>Emotional Crusher</b>: <a target="_blank" href="https://collerhatguy.github.io/emotional-furnace/">Live Server</a><a target="_blank" href="https://github.com/collerhatguy/emotional-furnace"> Repository</a></li>
+            <aside>This is a web app for emotional catharsis</aside>
+          </div>
+          <div class="project">
+            <li><b>Christmas Tree</b>: <a target="_blank" href="https://collerhatguy.github.io/christmasTree/">Live Server</a><a target="_blank" href="https://github.com/collerhatguy/christmasTree"> Repository</a></li>
+            <aside>This is a Christmas card I send to my friends and family</aside>
+          </div>
         </ul>
+        <div id="buttonContainer">
+          <button id="leftButton">Left</button><button id="rightButton">Right</button>
+        </div>
       </div>
         <h2>Work Experience</h2>
         <div class="experience">
@@ -47,7 +78,7 @@
             <ul>
               <li>170 S Saginaw St, Grand Blanc</li>
               <li><time>May 2020 - Present</time></li>
-              <li>Attained “Employee of the Month” within 3 months of work</li>
+              <li>Attained “Employee of the Month”<br> within 3 months of work</li>
               <li>Disinfected carts</li>
               <li>Counted customers as per safety regulations</li>
               <li>Recharged equipment like tablets and Amigos</li>

@@ -1,0 +1,95 @@
+@media only screen and (max-width: 719px) {
+    $fontMax: 3rem;
+}
+@media only screen and (min-width: 720px) {
+    $fontMax: 4.5rem;
+}
+$fontMax: 4.5rem;
+
+@keyframes projectSlide {
+    0% {transform: rotateY(0deg);}
+    5% {transform: rotateY(90deg);}
+    10% {transform: rotateY(180deg);}
+    15% {transform: rotateY(270deg);}
+    100% {transform: rotateY(360deg);}
+}
+@keyframes giddyHop {
+    0% {transform: translateY(0em);}
+    50% {transform: translateY(-.8em);}
+    100% {transform: translateY(0em);}
+}
+* {
+    background-color: white;
+    color: black;
+    margin: .2em;
+    padding: .2em;
+    overflow: wrap;
+}
+h1 {
+    font-size: $fontMax;
+}
+h2 {
+    font-size: $fontMax / 1.618;
+}
+h3 {
+    font-weight: 800;
+    font-size: $fontMax / (1.618 * 2);
+}
+.experience {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projects ul li, .experience li {
+    list-style: none;
+}
+article,
+li,
+p,
+aside,
+footer {
+    font-size: $fontMax / (1.618 * 2);
+}
+header {
+    text-align: center;
+}
+.experience div {
+    box-shadow: .2em .1em .2em black;
+    margin: .4em;
+}
+.project {
+    display: none;
+}
+.projectMain {
+    transform-origin: center;
+    animation: projectSlide 1s ease-in-out forwards;
+    border: .2em solid black;
+}
+b, time {
+    margin: 0px;
+}
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects, article {
+    text-align: center;
+}
+button {
+    width: fit-content;
+    height: fit-content;
+    font-size: $fontMax / (1.618 * 2);
+}
+button:hover {
+    animation: giddyHop 300ms ease 1 forwards;
+}
+article ul li {
+    box-shadow: .2em .1em .2em black;
+    display: inline; 
+}
+article ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
