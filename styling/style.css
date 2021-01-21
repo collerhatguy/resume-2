@@ -192,4 +192,9 @@ article ul {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+
+img {
+  width: 65vw;
+  height: 55vh;
+}
 /*# sourceMappingURL=style.css.map */
